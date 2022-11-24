@@ -69,7 +69,7 @@ def espera():
     time.sleep(1)
 
 print('Esta terminal muestra el temporizador, cumpla el pago antes de que llegue a 0 el contador.')
-num=10
+num=60
 for i in range(1,num+1):
     time.sleep(1)
     print(num-i)
