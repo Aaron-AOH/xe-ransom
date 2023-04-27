@@ -4,9 +4,9 @@ import time
 
 
 
-os.system('esconder carpeta')
-
-os.system('MOVER carpeta ')
+#*Futura implementacion
+#*os.system('esconder carpeta')
+#os.system('MOVER carpeta ')
 
 
 # Extensión para los archivos encriptados.
